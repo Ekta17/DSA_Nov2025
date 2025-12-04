@@ -34,6 +34,8 @@ public class LongestSubstringWoRepeatingChar {
         Set<Character> uniqueElementWindow = new HashSet<>();
         int left = 0;
         int maxLength = 0;
+        //I had issues again in writing this loop for right , I first added left to set and then increased length by 1 then started right with index 1 instead of 0
+        //But then after watching the solution I got it
         for(int right = 0; right < s.length(); right ++){
             while(uniqueElementWindow.contains(s.charAt(right))){
                 uniqueElementWindow.remove(s.charAt(left));
