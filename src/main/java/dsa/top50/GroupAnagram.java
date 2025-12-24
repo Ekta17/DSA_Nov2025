@@ -70,6 +70,12 @@ public class GroupAnagram {
         }
 
         return result;
+
+        //Complexity:
+        // n = total number of strings
+        // k = length of the string with max length
+        //space: O (n * k)
+        //time: O (n * klogk)
     }
 
     public static void main(String[] args) {
